@@ -39,7 +39,7 @@ private static AppiumDriver wd;
     }
 		
     
-    //@Test
+    @Test
     public void ifAllTabButtonsExistTest() throws IOException {
     	assertEquals("Button named Ads should be made visible","Ads",wd.findElement(By.name("Ads")).getText());
 		assertEquals("Button named My Account should be made visible","My Account",wd.findElement(By.name("My Account")).getText());
@@ -67,7 +67,7 @@ private static AppiumDriver wd;
     	assertEquals("version 2.0.0 us should be visible",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[17]")).getText());
     }
     
-    //@Test
+    @Test
     public void ifLandingPageHasAllTheListingCategories() throws IOException{
     	assertEquals("The landing page should have Mobiles & Tablets","Mobiles & Tablets",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[1]")).getText());
     	assertEquals("Category Electronics & Computers should be shown on Landing Page","Electronics & Computers",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[2]")).getText());
