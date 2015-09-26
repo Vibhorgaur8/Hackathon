@@ -52,31 +52,31 @@ private static AppiumDriver wd;
 		//wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAStaticText[1]")).click();
     }
 	
-    //@Test
+    @Test
     public void ifLandingPageHasAllTheHeadres() throws IOException{
     	assertEquals("The landing page should have a search bar","Sarch in Gurgaon...",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIATextField[1]")).getText());
     	assertEquals("Find ads near you should be present","Fnd ads neear you",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIAStaticText[1]")).getText());
     	assertEquals("The landing page should show a button displaying Sabmit a Free Ads","Sabmit a Free Ads",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIAButton[2]")).getText());
     	//WebElement el = (WebElement) wd.findElementsByXPath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]");
     	//List<WebElement> list = el.findElements(By.className("UIACollectionCell"));
-    	assertEquals("Help should be visible","Help",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[12]")).getText());
-    	assertEquals("Safety Tips should be visible","Safety Tips",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[13]")).getText());
-    	assertEquals("Terms of use should be visible","Safety Tips",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[14]")).getText());
-    	assertEquals("Contact us should be visible","Contact us",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[15]")).getText());
-    	assertEquals("Settings us should be visible","Settings",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[16]")).getText());
-    	assertEquals("version 2.0.0 us should be visible",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[17]")).getText());
+    	//assertEquals("Help should be visible","Help",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[12]")).getText());
+    	assertEquals("Safety Tips should be visible","Safety Tips",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[13]/UIAStaticText[1]")).getText());
+    	assertEquals("Terms of use should be visible","Safety Tips",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[14]/UIAStaticText[1]")).getText());
+    	assertEquals("Contact us should be visible","Contact us",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[15]/UIAStaticText[1]")).getText());
+    	assertEquals("Settings us should be visible","Settings",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[16]/UIAStaticText[1]")).getText());
+    	assertEquals("version 2.0.0 us should be visible",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[17]/UIAStaticText[1]")).getText());
     }
     
     @Test
     public void ifLandingPageHasAllTheListingCategories() throws IOException{
-    	assertEquals("The landing page should have Mobiles & Tablets","Mobiles & Tablets",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[1]")).getText());
-    	assertEquals("Category Electronics & Computers should be shown on Landing Page","Electronics & Computers",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[2]")).getText());
-    	assertEquals("Category Vehicles should be shown on Landing Page","Vehicles",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[3]")).getText());
-    	assertEquals("Category Home & Furniture should be shown on Landing Page","Home & Furniture",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[4]")).getText());
-    	assertEquals("Category Animals should be visible","Animals",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[5]")).getText());
-    	assertEquals("Category Books, Sports & Hobbies should be visible","Books, Sports & Hobbies",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[6]")).getText());
-    	assertEquals("Category Fashion & Beauty should be visible","Fashion & Beauty",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[7]")).getText());
-    	assertEquals("Category Kids & Baby should be visible","Kids & Baby ",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[8]")).getText());
+    	//assertEquals("The landing page should have Mobiles & Tablets","Mobiles & Tablets",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[1]")).getText());
+    	assertEquals("Category Electronics & Computers should be shown on Landing Page","Electronics & Computers",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[2]/UIAStaticText[1]")).getText());
+    	assertEquals("Category Vehicles should be shown on Landing Page","Vehicles",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[3]/UIAStaticText[1]")).getText());
+    	assertEquals("Category Home & Furniture should be shown on Landing Page","Home & Furniture",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[4]/UIAStaticText[1]")).getText());
+    	assertEquals("Category Animals should be visible","Animals",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[5]/UIAStaticText[1]")).getText());
+    	assertEquals("Category Books, Sports & Hobbies should be visible","Books, Sports & Hobbies",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[6]/UIAStaticText[1]")).getText());
+    	assertEquals("Category Fashion & Beauty should be visible","Fashion & Beauty",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[7]/UIAStaticText[1]")).getText());
+    	assertEquals("Category Kids & Baby should be visible","Kids & Baby ",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[8]/UIAStaticText[1]")).getText());
     	assertEquals("Gurgaon should be visible",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIAButton[1]")).getText());
     	assertEquals("Sabmit a Free Ads should be visible",wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIAButton[2]")).getText());
     }

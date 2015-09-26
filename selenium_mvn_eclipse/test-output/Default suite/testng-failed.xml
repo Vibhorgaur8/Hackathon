@@ -5,8 +5,9 @@
     <classes>
       <class name="selenium_mvn_eclipse.AppiumTest">
         <methods>
+          <include name="ifLandingPageHasAllTheHeadres"/>
+          <include name="ifLandingPageHasAllTheListingCategories"/>
           <include name="setUpClass"/>
-          <include name="openSubmitPage"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- selenium_mvn_eclipse.AppiumTest -->
